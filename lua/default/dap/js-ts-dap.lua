@@ -10,6 +10,9 @@ for _, lang in ipairs({"javascript", "typescript"}) do
             name = "Launch file",
             program = "${file}",
             cwd = "${workspaceFolder}",
+            autoReload = {
+                enable = true
+            }
         },
         {
             type = "pwa-node",
@@ -17,6 +20,9 @@ for _, lang in ipairs({"javascript", "typescript"}) do
             name = "Attach",
             processId = require'dap.utils'.pick_process,
             cwd = "${workspaceFolder}",
+            autoReload = {
+                enable = true
+            }
         }
     }
 end
