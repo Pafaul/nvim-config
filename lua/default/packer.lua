@@ -61,7 +61,6 @@ return require('packer').startup(function(use)
     }
 
     use('jose-elias-alvarez/null-ls.nvim');
-    use('MunifTanjim/prettier.nvim');
 
     use('m4xshen/autoclose.nvim')
 
@@ -76,5 +75,11 @@ return require('packer').startup(function(use)
     use('folke/neodev.nvim')
     use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
     use('theHamsta/nvim-dap-virtual-text')
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
 end)
 
