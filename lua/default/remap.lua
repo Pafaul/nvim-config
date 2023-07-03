@@ -21,3 +21,5 @@ vim.keymap.set("n", "ct", vim.cmd.tabnew)
 vim.keymap.set("n", "nt", vim.cmd.tabnext)
 vim.keymap.set("n", "pt", vim.cmd.tabNext)
 
+vim.keymap.set("n", "tc", vim.cmd.tabclose)
+
