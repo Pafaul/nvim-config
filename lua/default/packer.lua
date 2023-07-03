@@ -81,5 +81,19 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
+    use {
+        'windwp/nvim-ts-autotag',
+        config = function ()
+            require'nvim-ts-autotag'.setup()
+        end
+    }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+        config = function ()
+            require'lualine'.setup()
+        end
+    }
+
 end)
 
