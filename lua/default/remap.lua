@@ -18,8 +18,6 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "ct", vim.cmd.tabnew)
-vim.keymap.set("n", "nt", vim.cmd.tabnext)
-vim.keymap.set("n", "pt", vim.cmd.tabNext)
-
-vim.keymap.set("n", "tc", vim.cmd.tabclose)
+vim.keymap.set("n", "tn", vim.cmd.tabnext)
+vim.keymap.set("n", "tp", vim.cmd.tabNext)
 
