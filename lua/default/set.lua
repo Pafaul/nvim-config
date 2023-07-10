@@ -1,5 +1,3 @@
-vim.opt.autochdir = true
-
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -31,4 +29,3 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "
-
