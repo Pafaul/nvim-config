@@ -1,5 +1,6 @@
 require('default.dap.dap-icons')
 require('default.dap.dap-remap')
 require('default.dap.js-ts-dap')
+require('default.dap.go-dap')
 require('default.dap.dapui')
 require('default.dap.debug-virtual-text')
