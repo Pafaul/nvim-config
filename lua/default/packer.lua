@@ -99,4 +99,6 @@ return require('packer').startup(function(use)
         require('git-conflict').setup()
     end }
     use { 'ii14/neorepl.nvim' }
+
+    use { 'https://github.com/Pafaul/lsp-lens.nvim' }
 end)
