@@ -1,3 +1,5 @@
+require('dap-go').setup()
+
 require('dap').configurations.go = {
     {
         type = "go",

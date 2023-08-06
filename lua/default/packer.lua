@@ -45,9 +45,9 @@ return require('packer').startup(function(use)
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },     -- Required
+            { 'hrsh7th/nvim-cmp' }, -- Required
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' },     -- Required
+            { 'L3MON4D3/LuaSnip' }, -- Required
         }
     }
 
@@ -66,6 +66,8 @@ return require('packer').startup(function(use)
 
     use { "mxsdev/nvim-dap-vscode-js", requires = { "mfussenegger/nvim-dap" } }
 
+    use { 'leoluz/nvim-dap-go' }
+
     use {
         "microsoft/vscode-js-debug",
         opt = true,
@@ -73,8 +75,11 @@ return require('packer').startup(function(use)
     }
 
     use('folke/neodev.nvim')
+
     use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+
     use('theHamsta/nvim-dap-virtual-text')
+
     use {
         'numToStr/Comment.nvim',
         config = function()
@@ -100,5 +105,5 @@ return require('packer').startup(function(use)
     end }
     use { 'ii14/neorepl.nvim' }
 
-    use { 'https://github.com/Pafaul/lsp-lens.nvim' }
+    use { '/Users/pavelmikhailov/code/nvim-plugins/lsp-lens.nvim' }
 end)
