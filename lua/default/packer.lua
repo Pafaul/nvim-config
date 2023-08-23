@@ -103,7 +103,7 @@ return require('packer').startup(function(use)
     end }
     use { 'ii14/neorepl.nvim' }
 
-    use { '/Users/pavelmikhailov/code/nvim-plugins/lsp-lens.nvim' }
-   
-    use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+    use { 'Pafaul/lsp-lens.nvim' }
+
+    use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
 end)
